@@ -7,11 +7,11 @@ import json
 import pandas as pd
 
 import torch
-from evaluation.pose_estimation.training.datasets.coco_data.preprocessing import (inception_preprocess,
+from pose_estimation.training.datasets.coco_data.preprocessing import (inception_preprocess,
                                               rtpose_preprocess,
                                               ssd_preprocess, vgg_preprocess)
-from evaluation.pose_estimation.network.post import decode_pose
-from evaluation.pose_estimation.network import im_transform
+from pose_estimation.network.post import decode_pose
+from pose_estimation.network import im_transform
 
 '''
 MS COCO annotation order:
