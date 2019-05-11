@@ -71,7 +71,7 @@ def get_multiplier(img):
     :param img: numpy array, the current image
     :returns : list of float. The computed scales
     """
-    scale_search = [0.5, 1., 1.5, 2, 2.5]
+    scale_search = [1.]
     return [x * 368. / float(img.shape[0]) for x in scale_search]
 
 
